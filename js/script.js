@@ -4,13 +4,11 @@ const bookSelect = document.querySelector("#book-select");
 const checkButton = document.querySelector("#check-button");
 const result = document.querySelector("#result");
 const status = document.querySelector("#status");
-
 const catalog = {
   atlas: { title: "Атлас мира", available: true },
   novel: { title: "Загадки океана", available: false },
   guide: { title: "Путеводитель по космосу", available: true },
 };
-
 function checkAvailability(code) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
