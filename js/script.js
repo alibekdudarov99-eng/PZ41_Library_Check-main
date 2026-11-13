@@ -22,6 +22,7 @@ function checkAvailability(code) {
     }, 900);
   });
 }
+
 checkButton.addEventListener("click", () => {
   checkButton.disabled = true;
   result.textContent = "Проверяем каталог...";
